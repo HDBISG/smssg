@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sg.org.falundafa.smssg"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="24" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/arrow"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="sg.org.falundafa.smssg.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sg.org.falundafa.smssg.SendActivity"
+            android:label="@string/title_activity_send" >
+        </activity>
+        <activity
+            android:name="sg.org.falundafa.smssg.SettingActivity"
+            android:label="@string/title_activity_send" >
+        </activity>
+    </application>
+
+</manifest>

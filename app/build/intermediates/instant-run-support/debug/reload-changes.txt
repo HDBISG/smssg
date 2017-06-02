@@ -1,0 +1,12 @@
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$2$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/SettingActivity$1$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$3$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$1$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$4$1$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$5$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$6$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$4$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/MainActivity$7$override.class
+CHANGED,/Users/ok/Documents/df/smssg/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/sg/org/falundafa/smssg/SettingActivity$override.class

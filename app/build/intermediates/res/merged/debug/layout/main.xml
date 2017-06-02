@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bkg"
+    android:layout_margin="2dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <sg.org.falundafa.smssg.LinedEditText
+            android:id="@+id/smsReceivers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:lineSpacingMultiplier = "1.2"
+            android:hint="请在此粘贴手机号码"
+            android:gravity="left|top"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/msgSmsPrefixTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:gravity="center|top"
+                android:text="短信前缀\n +86"
+                android:layout_gravity="top|center_horizontal" />
+
+            <Button
+                android:id="@+id/pasteToReceivers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="formatReceivers"
+                android:text="粘贴剪切板到短信接收者"/>
+            <Button
+                android:id="@+id/pasteToSmsBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="formatReceivers"
+                android:text="粘贴剪切板到短信内容"/>
+
+            <Button
+                android:id="@+id/format"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:onClick="formatReceivers"
+                android:text="格式化"/>
+
+            <Button
+                android:id="@+id/sendSms"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:onClick="popupSmsBodyDialog"
+                android:text="下一步"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnLog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="帮助信息："/>
+
+        <TextView
+            android:id="@+id/textViewLog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="请粘贴短信接收者和短信内容"
+            android:singleLine="true"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+
+    <sg.org.falundafa.smssg.LinedEditText
+        android:id="@+id/smsBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:gravity="left|top"
+        android:lineSpacingMultiplier = "1.2"
+        android:hint="请在此粘贴短信内容"/>
+
+</LinearLayout>

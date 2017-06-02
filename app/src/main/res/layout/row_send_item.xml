@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/sendAgainBtn"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:enabled="false"
+        android:text="重发"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/smsReceiversView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/sendBtn"
+        android:layout_toRightOf="@+id/sendAgainBtn"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:text="发送"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

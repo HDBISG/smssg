@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/lactate_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/locate_sg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="新加坡:+86"/>
+
+        <RadioButton
+            android:id="@+id/locate_usa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="美国:01186" />
+        <RadioButton
+            android:id="@+id/locate_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="其它地区:"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/sms_prefix"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lactate_radio"
+        android:layout_toRightOf="@+id/lactate_radio"
+         />
+
+    <View
+        android:id="@+id/setting_blank"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/lactate_radio"
+        android:background="#E4E4E4" />
+
+    <LinearLayout
+        android:id="@+id/setting_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/setting_blank"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="No"
+            android:textColor="#7D7D7D"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#E4E4E4" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Yes"
+            android:textColor="#38ADFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

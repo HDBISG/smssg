@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
+        "source": "/Users/ok/Documents/df/smssg/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/arrow.jpg",
+        "source": "/Users/ok/Documents/df/smssg/app/src/main/res/mipmap-hdpi/arrow.jpg"
+    },
+    {
+        "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/bkg.png",
+        "source": "/Users/ok/Documents/df/smssg/app/src/main/res/mipmap-hdpi/bkg.png"
+    },
+    {
+        "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/title.png",
+        "source": "/Users/ok/Documents/df/smssg/app/src/main/res/mipmap-hdpi/title.png"
+    },
+    {
+        "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/back_black.png",
+        "source": "/Users/ok/Documents/df/smssg/app/src/main/res/mipmap-hdpi/back_black.png"
+    }
+]

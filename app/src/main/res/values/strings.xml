@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">利剑齐放</string>
+
+    <string name="action_help">帮助</string>
+    <string name="action_settings">设置</string>
+    <string name="action_exit">退出</string>
+    <string name="title_activity_send">利剑齐放</string>
+
+
+    <string name="setting_radio">选择国家(短信前缀)</string>
+    <string name="setting_radio1">新加坡</string>
+    <string name="setting_radio2">美国</string>
+    <string name="setting_radio3">其它国家</string>
+
+    <string name="help_msg">向内找，发正念！心性提高了，坏的物质去掉了，空间场干净了，利剑齐放就好用了。</string>
+
+</resources>
