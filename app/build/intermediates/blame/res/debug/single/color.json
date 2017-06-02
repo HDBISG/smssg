@@ -4,12 +4,12 @@
         "source": "/Users/ok/Documents/df/smssg/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
-        "source": "/Users/ok/Documents/df/smssg/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color/abc_tint_default.xml"
-    },
-    {
         "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
         "source": "/Users/ok/Documents/df/smssg/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/Users/ok/Documents/df/smssg/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color/abc_tint_default.xml"
     },
     {
         "merged": "/Users/ok/Documents/df/smssg/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
