@@ -62,7 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
         processInitData();
 
-        this.checkStart();
+        if( utilitySharedPreference.isDisplayWelcomeMsg() ) {
+            this.checkStart();
+        }
     }
 
 
@@ -94,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
         smsBodyEditView = (EditText) this.findViewById(R.id.smsBody);
         smsBodyEditView.setText(utilitySharedPreference.getDefaultSmsbody());
         //smsBodyEditView.setInputType(InputType.TYPE_NULL);
-
 
         sendSmsBtn = (Button)this.findViewById(R.id.sendSms);
         sendSmsBtn.setEnabled(false);

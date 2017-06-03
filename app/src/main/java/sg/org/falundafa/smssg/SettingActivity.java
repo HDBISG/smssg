@@ -2,11 +2,13 @@ package sg.org.falundafa.smssg;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +19,7 @@ public class SettingActivity extends AppCompatActivity {
     UtilitySharedPreference utilitySharedPreference = null;
 
     TextView msgSmsPrefixTv;
+    SwitchCompat displayWelcomeMsgSwitchCompat;
 
     MainActivity.MainActiviityHandler mainActiviityHandler;
     private MyAPP mAPP = null;
@@ -33,6 +36,16 @@ public class SettingActivity extends AppCompatActivity {
         utilitySharedPreference = UtilitySharedPreference.getInstance( this );
 
         msgSmsPrefixTv = (TextView)this.findViewById( R.id.msgSmsPrefixTv );
+        displayWelcomeMsgSwitchCompat = (SwitchCompat) findViewById(R.id.displayWelcomeMsgSwitchCompat);
+        displayWelcomeMsgSwitchCompat.setChecked( utilitySharedPreference.isDisplayWelcomeMsg() );
+        displayWelcomeMsgSwitchCompat.setOnCheckedChangeListener(
+                new CompoundButton.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(CompoundButton buttonView,
+                                                 boolean isChecked) {
+                        utilitySharedPreference.setDisplayWelcomeMsg( isChecked );
+                    }
+                });
 
         this.setActionBarLayout();
 

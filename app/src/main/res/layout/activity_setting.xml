@@ -71,10 +71,16 @@
             android:layout_height="wrap_content"
             android:text="显示欢迎语"/>
 
-        <CheckBox
-            android:layout_alignParentRight="true"
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/displayWelcomeMsgSwitchCompat"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:longClickable="false"
+            android:textColor="@color/colorPrimary"
+            android:textOff="Off"
+            android:textOn="On" />
 
     </RelativeLayout>
 
