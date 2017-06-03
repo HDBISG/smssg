@@ -53,8 +53,6 @@ public class UtilitySharedPreference {
 
     ////////////////////////
     private String PREFERENCE_DEFAULT_WELCOME_MSG = "WELCOME_MSG";
-    public static int DISPLAY_WELCOME_MSG = 1;
-    public static int DISPLAY_WELCOME_MSG_NOT = 0;
 
     public boolean isDisplayWelcomeMsg( ) {
         return sharedPreferences.getBoolean( PREFERENCE_DEFAULT_WELCOME_MSG, false );
@@ -66,6 +64,20 @@ public class UtilitySharedPreference {
         editor.commit();
     }
 
+    ////////////////////////
+    private String PREFERENCE_DEFAULT_PER_SMS_COUNT = "DEFAULT_PER_SMS_COUNT";
+    public int getPerSmsCount( ) {
+        return sharedPreferences.getInt( PREFERENCE_DEFAULT_PER_SMS_COUNT, 6 );
+    }
+
+    public void setPerSmsCount( int perSmsCount) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt( PREFERENCE_DEFAULT_PER_SMS_COUNT, perSmsCount );
+        editor.commit();
+    }
+
+
+    ////////////////////////
     public String getSmsSplitChar() {
         return ",";
     }

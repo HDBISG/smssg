@@ -45,11 +45,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="一次发送短信数量"/>
+
         <TextView
+            android:id="@+id/perSmsCount"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_perSmsCount"
+            android:layout_below="@id/perSmsCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="1" />
 
     </RelativeLayout>
 

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,9 @@ public class SettingActivity extends AppCompatActivity {
     MainActivity.MainActiviityHandler mainActiviityHandler;
     private MyAPP mAPP = null;
 
+    TextView perSmsCount ;
+    private SeekBar seekBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +40,27 @@ public class SettingActivity extends AppCompatActivity {
         utilitySharedPreference = UtilitySharedPreference.getInstance( this );
 
         msgSmsPrefixTv = (TextView)this.findViewById( R.id.msgSmsPrefixTv );
+
+        perSmsCount = (TextView)this.findViewById( R.id.perSmsCount );
+        perSmsCount.setText( utilitySharedPreference.getPerSmsCount() + "" );
+        seekBar = (SeekBar) findViewById( R.id.seekbar_perSmsCount );
+        seekBar.setProgress( utilitySharedPreference.getPerSmsCount() );
+        seekBar.setOnSeekBarChangeListener(
+                new SeekBar.OnSeekBarChangeListener() {
+                    @Override
+                    public void onProgressChanged(SeekBar seekBar, int progress,
+                                                  boolean fromUser) {
+                        SettingActivity.this.perSmsCount.setText( progress +"");
+                        utilitySharedPreference.setPerSmsCount( progress );
+                    }
+                    @Override
+                    public void onStopTrackingTouch(SeekBar seekBar) { }
+                    @Override
+                    public void onStartTrackingTouch(SeekBar seekBar) { }
+                }
+        );
+
+
         displayWelcomeMsgSwitchCompat = (SwitchCompat) findViewById(R.id.displayWelcomeMsgSwitchCompat);
         displayWelcomeMsgSwitchCompat.setChecked( utilitySharedPreference.isDisplayWelcomeMsg() );
         displayWelcomeMsgSwitchCompat.setOnCheckedChangeListener(
