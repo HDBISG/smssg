@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:text="短信前缀"/>
     <TextView
+        android:id="@+id/msgSmsPrefixTv"
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

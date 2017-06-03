@@ -526,7 +526,7 @@ int id icon 0x7f0b002c
 int id ifRoom 0x7f0b001f
 int id image 0x7f0b0029
 int id info 0x7f0b006d
-int id lactate_radio 0x7f0b0056
+int id lactate_radio 0x7f0b0057
 int id line1 0x7f0b0067
 int id line3 0x7f0b006b
 int id listMode 0x7f0b0009
@@ -536,7 +536,7 @@ int id locate_sg 0x7f0b0072
 int id locate_usa 0x7f0b0073
 int id media_actions 0x7f0b0065
 int id middle 0x7f0b001c
-int id msgSmsPrefixTv 0x7f0b005a
+int id msgSmsPrefixTv 0x7f0b0055
 int id multiply 0x7f0b0014
 int id never 0x7f0b0020
 int id no 0x7f0b0077
@@ -567,15 +567,15 @@ int id sendAgainBtn 0x7f0b006f
 int id sendBtn 0x7f0b0071
 int id sendListView 0x7f0b0054
 int id sendSms 0x7f0b005e
-int id setting_blank 0x7f0b0055
+int id setting_blank 0x7f0b0056
 int id setting_btn 0x7f0b0076
 int id shortcut 0x7f0b003d
 int id showCustom 0x7f0b000f
 int id showHome 0x7f0b0010
 int id showTitle 0x7f0b0011
 int id smsBody 0x7f0b0061
-int id smsBodyCountTextView 0x7f0b0057
-int id smsReceivers 0x7f0b0059
+int id smsBodyCountTextView 0x7f0b0058
+int id smsReceivers 0x7f0b005a
 int id smsReceiversView 0x7f0b0070
 int id sms_prefix 0x7f0b0075
 int id spacer 0x7f0b002f
@@ -600,7 +600,7 @@ int id up 0x7f0b0008
 int id useLogo 0x7f0b0012
 int id withText 0x7f0b0021
 int id wrap_content 0x7f0b0019
-int id yes 0x7f0b0058
+int id yes 0x7f0b0059
 int integer abc_config_activityDefaultDur 0x7f0c0000
 int integer abc_config_activityShortDur 0x7f0c0001
 int integer cancel_button_image_alpha 0x7f0c0002

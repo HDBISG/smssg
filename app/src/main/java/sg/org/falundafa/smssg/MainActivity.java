@@ -7,6 +7,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.Handler;
+import android.os.Message;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -49,24 +51,33 @@ public class MainActivity extends AppCompatActivity {
     TextView msgSmsPrefixTv = null;
     String smsPrefix = "";
 
+    MainActiviityHandler mainActiviityHandler;
+    private MyAPP mAPP = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         this.setActionBarLayout();
 
+        processInitData();
+
         this.checkStart();
     }
 
 
-    @Override
+   /* @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);//must store the new intent unless getIntent() will return the old one
         this.processInitData();
-    }
+    }*/
+
     private void processInitData() {
 
+        mainActiviityHandler = new MainActiviityHandler();
+        mAPP = (MyAPP) getApplication();
+        mAPP.setHandler( mainActiviityHandler );
 
         utilitySharedPreference = UtilitySharedPreference.getInstance( this );
 
@@ -78,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         //smsReceiversView.set
         msgSmsPrefixTv = (TextView)this.findViewById( R.id.msgSmsPrefixTv );
         smsPrefix = utilitySharedPreference.getDefaultSmsPrefix();
-        this.setSmsPrefixTv( smsPrefix );
+        this.updateSmsPrefixTv(  );
 
         smsBodyEditView = (EditText) this.findViewById(R.id.smsBody);
         smsBodyEditView.setText(utilitySharedPreference.getDefaultSmsbody());
@@ -399,8 +410,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void setSmsPrefixTv( String msgSmsPrefixTv) {
-        this.msgSmsPrefixTv.setText( "短信前缀: " + msgSmsPrefixTv );
+    private void updateSmsPrefixTv( ) {
+        this.msgSmsPrefixTv.setText( "短信前缀: " + utilitySharedPreference.getDefaultSmsPrefix() );
     }
 
     private void SmsBodyCountDialog() {
@@ -415,4 +426,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public final class MainActiviityHandler extends Handler {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            MainActivity.this.updateSmsPrefixTv();
+        }
+    }
 }

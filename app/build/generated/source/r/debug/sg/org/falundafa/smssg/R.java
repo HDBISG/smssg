@@ -1819,7 +1819,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f0b001f;
         public static final int image=0x7f0b0029;
         public static final int info=0x7f0b006d;
-        public static final int lactate_radio=0x7f0b0056;
+        public static final int lactate_radio=0x7f0b0057;
         public static final int line1=0x7f0b0067;
         public static final int line3=0x7f0b006b;
         public static final int listMode=0x7f0b0009;
@@ -1829,7 +1829,7 @@ containing a value of this type.
         public static final int locate_usa=0x7f0b0073;
         public static final int media_actions=0x7f0b0065;
         public static final int middle=0x7f0b001c;
-        public static final int msgSmsPrefixTv=0x7f0b005a;
+        public static final int msgSmsPrefixTv=0x7f0b0055;
         public static final int multiply=0x7f0b0014;
         public static final int never=0x7f0b0020;
         public static final int no=0x7f0b0077;
@@ -1860,15 +1860,15 @@ containing a value of this type.
         public static final int sendBtn=0x7f0b0071;
         public static final int sendListView=0x7f0b0054;
         public static final int sendSms=0x7f0b005e;
-        public static final int setting_blank=0x7f0b0055;
+        public static final int setting_blank=0x7f0b0056;
         public static final int setting_btn=0x7f0b0076;
         public static final int shortcut=0x7f0b003d;
         public static final int showCustom=0x7f0b000f;
         public static final int showHome=0x7f0b0010;
         public static final int showTitle=0x7f0b0011;
         public static final int smsBody=0x7f0b0061;
-        public static final int smsBodyCountTextView=0x7f0b0057;
-        public static final int smsReceivers=0x7f0b0059;
+        public static final int smsBodyCountTextView=0x7f0b0058;
+        public static final int smsReceivers=0x7f0b005a;
         public static final int smsReceiversView=0x7f0b0070;
         public static final int sms_prefix=0x7f0b0075;
         public static final int spacer=0x7f0b002f;
@@ -1893,7 +1893,7 @@ containing a value of this type.
         public static final int useLogo=0x7f0b0012;
         public static final int withText=0x7f0b0021;
         public static final int wrap_content=0x7f0b0019;
-        public static final int yes=0x7f0b0058;
+        public static final int yes=0x7f0b0059;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur=0x7f0c0000;
