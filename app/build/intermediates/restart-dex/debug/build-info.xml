@@ -4,38 +4,30 @@
     api-level="15"
     density="xhdpi"
     format="7"
-    timestamp="1537286004509"
-    token="-6667613455544465396"
-    verifier="COMPATIBLE" >
+    timestamp="4777457704777"
+    token="-6667613455544465396" >
 
     <task
         name="javac"
-        duration="417" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="1063" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="158" />
+        duration="0" />
     <task
         name="verifier"
-        duration="20" />
+        duration="0" />
 
     <artifact
-        location="/Users/ok/Documents/df/smssg/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/ok/Documents/df/smssg/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="665073255751" >
+    <build timestamp="4777457704777" >
         <artifact
             location="/Users/ok/Documents/df/smssg/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="1537286004509"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/ok/Documents/df/smssg/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

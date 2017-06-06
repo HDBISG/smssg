@@ -55,7 +55,7 @@ public class UtilitySharedPreference {
     private String PREFERENCE_DEFAULT_WELCOME_MSG = "WELCOME_MSG";
 
     public boolean isDisplayWelcomeMsg( ) {
-        return sharedPreferences.getBoolean( PREFERENCE_DEFAULT_WELCOME_MSG, false );
+        return sharedPreferences.getBoolean( PREFERENCE_DEFAULT_WELCOME_MSG, true );
     }
 
     public void setDisplayWelcomeMsg( boolean isDisplay ) {

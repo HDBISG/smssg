@@ -5,27 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="10dp"
     tools:context=".SettingActivity">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:onClick="openSmsPrefixDialog">
-
-    <TextView
-        android:layout_alignParentLeft="true"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="短信前缀"/>
-    <TextView
-        android:id="@+id/msgSmsPrefixTv"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+86"/>
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:onClick="openSmsPrefixDialog">
 
-</RelativeLayout>
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信前缀"/>
+        <TextView
+            android:id="@+id/msgSmsPrefixTv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+86"/>
+
+    </RelativeLayout>
 
     <View
         android:id="@+id/setting_blank"
@@ -38,7 +40,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:gravity="center_vertical"
+        android:layout_weight="1">
 
         <TextView
             android:layout_alignParentLeft="true"
@@ -73,7 +76,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp">
+        android:layout_weight="1"
+        android:gravity="center_vertical">
 
         <TextView
             android:layout_alignParentLeft="true"
@@ -99,5 +103,10 @@
         android:layout_height="1dp"
         android:layout_below="@+id/lactate_radio"
         android:background="@color/colorAccent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="3" />
 
 </LinearLayout>

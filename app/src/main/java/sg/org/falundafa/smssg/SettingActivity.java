@@ -50,6 +50,7 @@ public class SettingActivity extends AppCompatActivity {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress,
                                                   boolean fromUser) {
+                        progress = Utility.checkProgress( progress );
                         SettingActivity.this.perSmsCount.setText( progress +"");
                         utilitySharedPreference.setPerSmsCount( progress );
                     }

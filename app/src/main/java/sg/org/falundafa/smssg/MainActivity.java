@@ -158,16 +158,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void popupSmsBodyDialog(View view ) {
+        ConstantCache.smsBody = smsBodyEditView.getText().toString();
+        utilitySharedPreference.setDefaultSmsbody(ConstantCache.smsBody);
         this.SmsBodyCountDialog();
         smsBodyCountDialog.show();
     }
 
     public void navigateToSendActivity(  ) {
 
-        ConstantCache.smsBody = smsBodyEditView.getText().toString();
         Intent intent = new Intent( this, SendActivity.class);
         this.startActivity(intent) ;
-        utilitySharedPreference.setDefaultSmsbody(ConstantCache.smsBody);
 
         this.displayLogs( "开始发送短信");
     }

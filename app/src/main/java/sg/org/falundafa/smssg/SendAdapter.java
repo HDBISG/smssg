@@ -64,16 +64,17 @@ public class SendAdapter extends ArrayAdapter {
                     sendBtn.setEnabled( false );
                     sendAgainBtn.setEnabled(true);
 
-                    /*Intent sendIntent = new Intent(Intent.ACTION_SEND);
+                    Intent sendIntent = new Intent(Intent.ACTION_SEND);
                     sendIntent.putExtra("address", smsReceiversView.getText() );
                     sendIntent.putExtra("sms_body", ConstantCache.smsBody);
-                    sendIntent.putExtra( Intent.EXTRA_TEXT, "final_sms_txt");
-                    sendIntent.setType("vnd.android-dir/mms-sms");*/
-                    String recipients = "smsto:" + smsReceiversView.getText();
+                    //sendIntent.setType("vnd.android-dir/mms-sms");
+                    sendIntent.setType("text/plain");
+
+                    /*String recipients = "smsto:" + smsReceiversView.getText();
                     Intent sendIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse(recipients));
                     sendIntent.putExtra("sms_body", ConstantCache.smsBody );
-                    sendIntent.putExtra("compose_mode", true);
-                    //sendIntent.setType("text/plain");
+                    sendIntent.putExtra("compose_mode", true);*/
+
                     context.startActivity(sendIntent);
                 }
             });

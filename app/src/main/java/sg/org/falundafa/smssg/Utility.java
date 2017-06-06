@@ -27,4 +27,18 @@ public class Utility {
         }
     }
 
+    /**
+     * Can't less than 1;
+     * @param progress
+     * @return
+     */
+    public static int checkProgress( int progress ) {
+        if( progress < 1 ) {
+            return 1;
+        } else if( progress > 100 ) {
+            return 100;
+        }
+        return progress;
+    }
+
 }

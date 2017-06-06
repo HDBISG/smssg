@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -110,11 +111,17 @@ public class SmsBodyCountDialog extends Dialog {
     }
 
     private void initRadioData(  ) {
-        String s = "短信内容相当于三条短信内容。";
+
+        String smsBody = UtilitySharedPreference.getInstance( null ).getDefaultSmsbody();
+        int smsCount = Utility.getSmsCount( smsBody );
+        System.out.println( "smsCount=" + smsCount + "  " + smsBody.getBytes().length );
+
+        String s = "短信内容相当于 " + smsCount + " 条普通短信内容。";
         Spannable spanText = new SpannableString( s );
         spanText.setSpan(new ForegroundColorSpan( Color.RED )
-                , 0, 3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-
+                , 8, 9, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spanText.setSpan(new RelativeSizeSpan(1.5f)
+                , 8, 10, spanText.SPAN_EXCLUSIVE_EXCLUSIVE);
         smsBodyCountTextView.setText( spanText );
 
     }
