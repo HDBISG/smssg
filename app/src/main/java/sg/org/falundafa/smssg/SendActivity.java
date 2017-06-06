@@ -31,27 +31,18 @@ public class SendActivity extends AppCompatActivity {
     private void splitReceivers() {
         String oneLineReceivers = "";
         String smsSplitChar = UtilitySharedPreference.getInstance(this).getSmsSplitChar();
+        int perSmsCount = UtilitySharedPreference.getInstance(this).getPerSmsCount();
 
         for( int i=0; i<ConstantCache.receivers.size(); i++ ) {
             String item = ConstantCache.receivers.get( i );
             oneLineReceivers += item + smsSplitChar ;
 
-            if( (i!=0 &&(i+1)%5 == 0) || i == ConstantCache.receivers.size() -1 ) {
+            if( ( (i+1)% perSmsCount == 0) || i == ConstantCache.receivers.size() -1 ) {
                 splitReceivers.add( oneLineReceivers );
                 oneLineReceivers = "";
             }
         }
-        //合并最后一条;
-        if( splitReceivers != null && splitReceivers.size() >1 ) {
-            oneLineReceivers = splitReceivers.get( splitReceivers.size() -1 ); //last one
-            if( oneLineReceivers.length() < 15*3 +1) {
-                //少于三条；
-                oneLineReceivers = splitReceivers.get( splitReceivers.size() -2 ) + oneLineReceivers;
-                splitReceivers.remove( splitReceivers.size() -1 );
-                splitReceivers.remove( splitReceivers.size() -1 );
-                splitReceivers.add( oneLineReceivers );
-            }
-        }
+
     }
 
     private void setListView( ) {

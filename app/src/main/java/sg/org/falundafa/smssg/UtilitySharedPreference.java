@@ -79,7 +79,7 @@ public class UtilitySharedPreference {
 
     ////////////////////////
     public String getSmsSplitChar() {
-        return ",";
+        return ";";
     }
 
 }

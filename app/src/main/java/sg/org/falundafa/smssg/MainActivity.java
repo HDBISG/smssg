@@ -291,10 +291,11 @@ public class MainActivity extends AppCompatActivity {
     private String formateToDisplay() {
         //生成返回结果；
         String rst = "";
+        int perSmsCount = UtilitySharedPreference.getInstance(this).getPerSmsCount();
         for( int i=0;i < ConstantCache.receivers.size();i ++  ) {
             String str = ConstantCache.receivers.get( i );
             rst = rst + str + "\n";
-            if( i!=0 && (i+1)%5 ==0 ) {
+            if(  (i+1)% perSmsCount ==0 ) {
                 rst = rst + "\n"; //五个一换行；
             }
         }
